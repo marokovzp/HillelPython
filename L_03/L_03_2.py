@@ -1,8 +1,8 @@
-user_input = input('Type digits with space: ')
+#list = [12, 3, 4, 10]
+#list = [1]
+#list = []
+list = [12, 3, 4, 10, 8]
 
-list = []
-for item in user_input.split():
-    list.append(int(item))
 
 print(list, end=' ')
 print('=>', end=' ')
@@ -14,4 +14,4 @@ if len(list) > 0:
     list.insert(0, last_digit)
     print(list)
 else:
-    print ('[]')
+    print (list)
