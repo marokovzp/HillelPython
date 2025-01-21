@@ -1,23 +1,23 @@
-list = [0, 1, 7, 2, 4, 8]# => (0 + 7 + 4) * 8 = 88
-# list = [1, 3, 5]# => 30
-# list = [6]# => 36
-# list = []# => 0
+lst = [0, 1, 7, 2, 4, 8]# => (0 + 7 + 4) * 8 = 88
+# lst = [1, 3, 5]# => 30
+# lst = [6]# => 36
+# lst = []# => 0
 
-print (list, end=' ')
+print (lst, end=' ')
 print('=>', end=' ')
 
-new_list = []
+new_lst = []
 
-if len(list) > 0:
-    last_element = list[len(list) - 1]
+if len(lst) > 0:
+    last_element = lst[len(lst) - 1]
 else:
     last_element = 0
 
-for i, el in enumerate (list):
+for i, el in enumerate (lst):
     if (i % 2) == 0:
-        new_list.append(el)
+        new_lst.append(el)
 
-sum_all = sum(new_list)
+sum_all = sum(new_lst)
 rez = sum_all * last_element
 
 print(rez)

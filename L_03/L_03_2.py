@@ -1,17 +1,17 @@
-#list = [12, 3, 4, 10]
-#list = [1]
-#list = []
-list = [12, 3, 4, 10, 8]
+#lst = [12, 3, 4, 10]
+#lst = [1]
+#lst = []
+lst = [12, 3, 4, 10, 8]
 
 
-print(list, end=' ')
+print(lst, end=' ')
 print('=>', end=' ')
 
-if len(list) > 0:
-    last_digit_index = len(list) - 1
-    last_digit = list[last_digit_index]
-    del (list[last_digit_index])
-    list.insert(0, last_digit)
-    print(list)
+if len(lst) > 0:
+    last_digit_index = len(lst) - 1
+    last_digit = lst[last_digit_index]
+    del (lst[last_digit_index])
+    lst.insert(0, last_digit)
+    print(lst)
 else:
-    print (list)
+    print (lst)
