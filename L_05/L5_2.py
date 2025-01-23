@@ -8,17 +8,14 @@ while user_continue == "y":
     if user_input_math == "+":
         result += user_input_2
         print(result)
-        user_continue = input('do you want to continue (y)?: ')
 
     elif user_input_math == "-":
         result -= user_input_2
         print(result)
-        user_continue = input('do you want to continue (y)?: ')
 
     elif user_input_math == "*":
         result *= user_input_2
         print(result)
-        user_continue = input('do you want to continue (y)?: ')
 
     elif user_input_math == "/":
         if user_input_2 == 0:
@@ -27,6 +24,6 @@ while user_continue == "y":
         else:
             result /= user_input_2
             print(result)
-            user_continue = input('do you want to continue (y)?: ')
+    user_continue = input('do you want to continue (y)?: ')
 else:
     print('end')
