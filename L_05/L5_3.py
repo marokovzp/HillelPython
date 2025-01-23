@@ -15,7 +15,6 @@ lst = my_str.split()
 new_str ="".join(lst)
 
 lst2 = list(new_str)
-print(lst2)
 
 lst3 = []
 for i, el in enumerate (lst2):
