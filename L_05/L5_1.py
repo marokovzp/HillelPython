@@ -24,28 +24,28 @@ my_str = 'assert_exception'# => True
 print(my_str, end=' ')
 print('=>', end=' ')
 
-is_False_count = 0
+is_false_count = 0
 lst = list(my_str)
 
 for i in my_str:
     if i.isupper():
-        is_False_count += 1
+        is_false_count += 1
 
 if lst[0].isdigit():
-    is_False_count += 1
+    is_false_count += 1
 
 for i, el in enumerate (lst):
     for el_punc in string.punctuation:
         if el == el_punc or el == " ":
             if el != "_":
-                is_False_count += 1
+                is_false_count += 1
 
 for i, el in enumerate(keyword.kwlist):
     if my_str.count(el):
         if len(el) == len(my_str):
-            is_False_count += 1
+            is_false_count += 1
 
 if my_str.count("__"):
-    is_False_count += 1
+    is_false_count += 1
 
-print (is_False_count == 0)
+print (is_false_count == 0)
