@@ -11,13 +11,13 @@ import keyword
 # my_str = 'get value'# => False
 # my_str = 'get!value'# => False
 # my_str = 'some_super_puper_value'# => True
-my_str = 'Get_value'# => False
+# my_str = 'Get_value'# => False
 # my_str = 'get_Value'# => False
 # my_str = 'getValue'# => False
 # my_str = '3m'# => False
 # my_str = 'm3'# => True
 # my_str = 'assert'# => False
-# my_str = 'assert_exception'# => True
+my_str = 'assert_exception'# => True
 
 # my_str = input('type your string: ')
 
@@ -48,4 +48,4 @@ for i, el in enumerate(keyword.kwlist):
 if my_str.count("__"):
     is_False_count += 1
 
-print (is_False_count < 1)
+print (is_False_count == 0)
