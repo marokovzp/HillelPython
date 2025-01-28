@@ -39,6 +39,6 @@ else: sec_str = str(sec)
 
 print(days, end=' ')
 print(days_str, end=' ')
-print (hours_str, end=':')
+print(hours_str, end=':')
 print(minutes_str, end=':')
 print(sec_str)
