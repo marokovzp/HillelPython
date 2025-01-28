@@ -15,6 +15,7 @@ for i, el in enumerate(string.ascii_letters):
         start_i = i
     if el == my_str[2]:
         end_i = i
+        break
 
 for i, el in enumerate(string.ascii_letters):
     if i >= start_i and i <= end_i:
