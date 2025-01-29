@@ -21,7 +21,7 @@ if days > 10 and days < 20: days_str = 'днів'
 else:
     leftover = (days % 10)
     if leftover == 1: days_str = 'день'
-    elif leftover == 2 or leftover == 3: days_str = 'дні'
+    elif leftover == 2 or leftover == 3 or leftover == 4: days_str = 'дні'
     else: days_str = 'днів'
 
 hours = int((hours - (days * 24)) % 60)
