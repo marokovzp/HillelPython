@@ -1,6 +1,3 @@
-from win32verstamp import null_byte
-
-
 def second_index(text, some_str):
   ind = text.find(some_str, text.find(some_str) + 1)
 
