@@ -4,8 +4,7 @@ def add_one(some_list):
 
     for el in some_list:
         my_str += str(el)
-    my_summ = int(my_str) + 1
-    my_str = str(my_summ)
+    my_str = str(int(my_str) + 1)
 
     for el in my_str:
         lst.append(int(el))
