@@ -1,5 +1,5 @@
 import string
-# print(string.ascii_letters)
+print(string.ascii_letters)
 
 # my_str = "a-c"# -> abc
 # my_str = "a-a"# -> a
