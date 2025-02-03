@@ -1,6 +1,5 @@
 def add_one(some_list):
     my_str = ""
-    my_str_2 = ""
     lst = []
 
     for el in some_list:
