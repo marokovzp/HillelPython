@@ -1,15 +1,16 @@
 def find_unique_value(some_list):
     some_list.sort()
-    lst_1 = []
-    lst_2 = []
-
+    previous = -1
+    uniq_lst = []
     for i, el in enumerate(some_list):
-        if i % 2 == 0:
-            lst_1.append(el)
-        else:
-            lst_2.append(el)
+        if el != previous:
+            previous = el
+            uniq_lst.append(el)
 
-    num = set(lst_1).symmetric_difference(set(lst_2))
+    for i, el in enumerate(uniq_lst):
+        some_list.remove(el)
+
+    num = set(uniq_lst).symmetric_difference(set(some_list))
     return float(str(num.pop()))
 
 
