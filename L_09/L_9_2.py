@@ -1,9 +1,11 @@
-def popular_words(text, words):
-    text = text.lower().split()  # Convert to lowercase and split into words
-    print( {word: text.count(word) for word in words})
-    return {word: text.count(word) for word in words}  # Count occurrences
+def difference(*args):
+    lst = list(args)
+    if len(lst) != 0: return round(max(lst) - min(lst), 2)
+    else: return 0
 
-# Test case
-assert popular_words('''When I was One I had just begun When I was Two I was nearly new ''',    ['i', 'was', 'three', 'near']) == {'i': 4, 'was': 3, 'three': 0, 'near': 0}, 'Test1'
 
+assert difference(1, 2, 3) == 2, 'Test1'
+assert difference(5, -5) == 10, 'Test2'
+assert difference(10.2, -2.2, 0, 1.1, 0.5) == 12.4, 'Test3'
+assert difference() == 0, 'Test4'
 print('OK')
