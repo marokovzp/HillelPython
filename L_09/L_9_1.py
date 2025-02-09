@@ -1,11 +1,9 @@
 def popular_words (text, words):
     text = " " + text.lower() + " "
-    amount_lst = []
     my_dict = {}
     for el in words:
         el_new = " " + el + " "
         amount = text.count(el_new)
-        amount_lst.append(amount)
         my_dict.update({el: amount})
     return my_dict
 
