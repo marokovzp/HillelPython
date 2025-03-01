@@ -1,3 +1,6 @@
+class GroupException(Exception):
+    pass
+
 class Human:
 
     def __init__(self, gender, age, first_name, last_name):
@@ -26,10 +29,9 @@ class Group:
         self.max_students = max_students
 
     def add_student(self, student):
-        if len(self.group) < self.max_students:
-            self.group.add(student)
-        else:
-            raise ValueError("Too many students")
+        if len(self.group) >= self.max_students:
+            raise GroupException("Too many students")
+        self.group.add(student)
 
     def find_student(self, last_name):
         for student in self.group:
@@ -68,5 +70,5 @@ print(gr)
 
 try:
     gr.add_student(st2)
-except ValueError as e:
+except GroupException as e:
     print(e)
